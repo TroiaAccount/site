@@ -25,7 +25,7 @@ This is the API documentation for the Polling App.
 
 ### Create Poll
 
-* URL: `/api/poll-store`
+* URL: `/api/poll-store?token=*you-token*`
 * Method: POST
 * Parameters: 
   * `title` (string, required): poll title
@@ -36,7 +36,7 @@ This is the API documentation for the Polling App.
 
 ### Update Poll
 
-* URL: `/api/poll-update`
+* URL: `/api/poll-update?token=*you-token*`
 * Method: POST
 * Parameters: 
   * `poll_id` (int, required): poll ID to update
@@ -48,28 +48,28 @@ This is the API documentation for the Polling App.
 
 ### Get Poll
 
-* URL: `/api/poll-update-get`
+* URL: `/api/poll-update-get?token=*you-token*`
 * Method: GET
 * Parameters: 
   * `poll_id` (int, required): poll ID to get
 
 ### Destroy Poll
 
-* URL: `/api/poll-destroy`
+* URL: `/api/poll-destroy?token=*you-token*`
 * Method: POST
 * Parameters: 
   * `poll_id` (int, required): poll ID to destroy
 
 ### Get Random Poll
 
-* URL: `/api/get-random-poll`
+* URL: `/api/get-random-poll?token=*you-token*`
 * Method: GET
 
 ## Answers
 
 ### Destroy Answer
 
-* URL: `/api/poll-destroy-answer`
+* URL: `/api/poll-destroy-answer?token=*you-token*`
 * Method: POST
 * Parameters: 
   * `answer_id` (int, required): answer ID to destroy
